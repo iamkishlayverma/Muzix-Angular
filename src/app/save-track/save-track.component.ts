@@ -38,9 +38,9 @@ export class SaveTrackComponent implements OnInit {
         console.log('IMG : ' + this.trackinfo.img);
         console.log(this.trackinfo);
        const m = this.muzixservice.saveTrack(this.trackinfo).subscribe(
-
-        data => {
-          console.log(data);
+        data1 => {
+          console.log(data1);
+          this.router.navigate(['/myplaylist']);
         }
        );
        console.log(m);

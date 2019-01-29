@@ -39,7 +39,7 @@ import { NavigationComponent } from './navigation/navigation.component';
       {path: 'searchtrack/:trackname', component: LastFmComponent},
       {path: 'savetrack/:mbid', component: SaveTrackComponent},
       {path: 'myplaylist', component: GetAllTracksComponent},
-      {path: 'deletetrack/:mbid', component: GetAllTracksComponent},
+      {path: 'deletetrack/:mbid', component: DeleteTrackComponent},
       {path: 'home', component: HomeComponent},
       {path: 'updatetrack/:mbid/:comment', component: UpdateTrackComponent},
       {path: '', redirectTo: '/home', pathMatch: 'full'}

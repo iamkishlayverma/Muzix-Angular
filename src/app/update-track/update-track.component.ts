@@ -22,6 +22,7 @@ export class UpdateTrackComponent implements OnInit {
    this.tracks = this.muzixservice.updateTrack(this.mbid1, this.comment1).subscribe(
     data => {
       this.tracks = data;
+      this.router.navigate(['/myplaylist']);
     },
     error => {
       console.log('some error occured in Update Track');
