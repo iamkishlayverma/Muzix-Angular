@@ -1,7 +1,4 @@
-.header{
-    background-color: #04192E;
-    display: block;
-    padding: 3%;
-    color: white;
-    font-size: 26px;
-}
+.hello{
+    float: right;
+    margin-top: 10px;
+ }

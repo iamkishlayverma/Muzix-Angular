@@ -14,6 +14,7 @@ import { MuzixHttpService } from './muzix-http.service';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { GetAllTracksComponent } from './get-all-tracks/get-all-tracks.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { GetAllTracksComponent } from './get-all-tracks/get-all-tracks.component
     UpdateTrackComponent,
     LastFmComponent,
     HomeComponent,
-    GetAllTracksComponent
+    GetAllTracksComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,7 @@ import { GetAllTracksComponent } from './get-all-tracks/get-all-tracks.component
       {path: 'searchtrack/:trackname', component: LastFmComponent},
       {path: 'savetrack/:mbid', component: SaveTrackComponent},
       {path: 'myplaylist', component: GetAllTracksComponent},
-      {path: 'deletetrack/:mbid', component: DeleteTrackComponent},
+      {path: 'deletetrack/:mbid', component: GetAllTracksComponent},
       {path: 'home', component: HomeComponent},
       {path: 'updatetrack/:mbid/:comment', component: UpdateTrackComponent},
       {path: '', redirectTo: '/home', pathMatch: 'full'}
