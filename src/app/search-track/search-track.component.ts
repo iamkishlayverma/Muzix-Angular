@@ -14,8 +14,7 @@ export class SearchTrackComponent implements OnInit {
   ngOnInit() {
   }
   search(): any {
-    // trackname = this.trackname;
-    console.log(this.trackname);
+    console.log('trackname : ' + this.trackname);
     this.router.navigate(['/searchtrack', this.trackname]);
   }
 
