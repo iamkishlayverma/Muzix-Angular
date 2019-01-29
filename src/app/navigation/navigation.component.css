@@ -1,0 +1,10 @@
+.nav-item{
+    font-size: 4vh;
+    padding: 0;
+}
+.title{
+    font-family: 'Lobster', cursive;
+    color: rgb(255, 68, 68);
+    font-size: 6vh;
+    padding-left: 28vw;   
+}
