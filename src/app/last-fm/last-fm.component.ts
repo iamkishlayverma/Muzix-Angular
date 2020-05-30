@@ -19,7 +19,7 @@ export class LastFmComponent implements OnInit {
 
     this.tracks = this.muzixservice.searchTrack(this.trackname).subscribe(
       data => {
-        this.tracks = data['results']['trackmatches']['track'];
+        this.tracks = data;
       },
       error => {
         console.log('some error occured');

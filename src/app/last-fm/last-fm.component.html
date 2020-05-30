@@ -4,8 +4,8 @@
     <br><br><br><br>
   </div>
   <div class="row" style="text-align:center" >
-    <div *ngFor="let blog of tracks" class="col-md-4">
-      <img class="card-img-top" src='{{blog.image[3]["#text"]}}' alt="Card image cap">
+    <div *ngFor="let blog of tracks.results.trackmatches.track" class="col-md-4">
+      <img class="card-img-top" src='{{blog.image[1]["#text"]}}' alt="Card image cap">
       <div class="panel panel-default">
         <div class="panel-heading">{{blog.name| uppercase}}</div>
         <div class="panel-body">
