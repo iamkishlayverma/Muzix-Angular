@@ -15,6 +15,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { GetAllTracksComponent } from './get-all-tracks/get-all-tracks.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { NavigationComponent } from './navigation/navigation.component';
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
+    NgxSpinnerModule,
     RouterModule.forRoot([
       {path: 'search', component: SearchTrackComponent},
       {path: 'searchtrack/:trackname', component: LastFmComponent},
