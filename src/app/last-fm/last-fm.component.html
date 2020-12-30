@@ -1,7 +1,17 @@
 <div class="container" style="text-align:center">
   <div class="row" style="text-align:center">
-    <div class="col-md-12" style="font-size:22px">Search Results for "{{trackname}}"</div>
-    <br><br><br><br>
+    <div *ngIf="searching" class="col-md-12" style="font-size:22px">
+      <h3>
+        Searching...Almost there
+      </h3>
+    </div>
+    <div *ngIf="!searching" class="col-md-12" style="font-size:22px; display: inline;">
+      Search Results for
+      <span style="font-family: Fantasy; margin: 5px;">
+        {{trackname.toUpperCase()}}
+      </span>
+    </div>
+    <br><br><br><br><br><br>
   </div>
   <div class="row" style="text-align:center">
     <div *ngFor="let blog of tracks.results.trackmatches.track" class="col-md-4">

@@ -1,26 +1,48 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark indigo" [containerInside]="false">
+  <!-- Navbar brand -->
+  <!-- <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand> -->
   <a class="nav-link" [routerLink]="['/home']">
     <img src="assets/images/music-quaver-flat.png" width="40" height="40" class="d-inline-block align-top"
       alt="App Logo">
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="title">Muzix</div>
+  <!-- Collapsible content -->
+  <links>
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+              <a class="nav-link waves-light" [routerLink]="['/home']" mdbWavesEffect>Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link waves-light" mdbWavesEffect>Trending</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link waves-light" [routerLink]="['/myplaylist']" mdbWavesEffect>Playlist</a>
+          </li>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" [routerLink]="['/home']">Home</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" [routerLink]="['/myplaylist']">Playlist</a>
-      </li>
-      <li class="nav-item">
-        <div class="title">Muzix</div>
-      </li>
-    </ul>
+          <!-- Dropdown -->
+          <!-- <li class="nav-item dropdown" dropdown>
+              <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+              Basic dropdown<span class="caret"></span></a>
+              <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+                  <div class="divider dropdown-divider"></div>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+              </div>
+          </li> -->
 
-    <app-search-track></app-search-track>
-  </div>
-</nav>
+      </ul>
+      <!-- Links -->
+
+<!-- Search form -->
+      <form class="form-inline waves-light" mdbWavesEffect>
+          <div class="md-form my-0">
+            <app-search-track></app-search-track>
+          </div>
+      </form>
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>

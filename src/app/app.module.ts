@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { GetAllTracksComponent } from './get-all-tracks/get-all-tracks.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [MuzixHttpService],
   bootstrap: [AppComponent]

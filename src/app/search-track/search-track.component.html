@@ -1,5 +1,8 @@
-<form class="form-inline my-2 my-lg-3 hello" #createForm="ngForm" (ngSubmit)="search()">
-    <input class="form-control mr-sm-2" type="text" name="trackname" [(ngModel)]="trackname" placeholder="Track Name"
+<form class="form-inline my-2 my-lg-3" #createForm="ngForm" (ngSubmit)="search()">
+    <div class="searchTitle">
+        <input class="form-control mr-sm-2" type="text" name="trackname" [(ngModel)]="trackname" placeholder="Track Name"
         aria-label="Search">
+    </div>
+    
     <button type="button" class="btn btn-primary" type="submit" id="button-addon2" [routerLink]="['/home']">Search</button>
 </form>
