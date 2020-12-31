@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -16,10 +16,8 @@ export class MuzixHttpService {
   constructor(private httpclient: HttpClient) { }
 
   public searchTrack(track): Observable<JSON> {
-    console.log('this.tracks', (this.lastfmUrl + '/?method=track.search&track=' + track +
-    '&api_key=' + this.apiKey + '&format=json'));
     this.tracks = this.httpclient.get<JSON>(this.lastfmUrl + '/?method=track.search&track=' + track +
-     '&api_key=' + this.apiKey + '&format=json');    
+      '&api_key=' + this.apiKey + '&format=json');
     return this.tracks;
   }
 
@@ -31,7 +29,7 @@ export class MuzixHttpService {
 
   public findtrack(mid): any {
     const trackinfo = this.httpclient.get(this.lastfmUrl + '/?method=track.getInfo&api_key=' + this.apiKey + '&mbid=' +
-    mid + '&format=json');
+      mid + '&format=json');
     return trackinfo;
   }
 
@@ -42,14 +40,12 @@ export class MuzixHttpService {
   }
 
   public deleteTrack(mid): any {
-    console.log('HERE : ' + mid);
     const track = "str";
     // const track = this.httpclient.delete(this.mongodbUrl + 'track/' + mid);
     return track;
   }
 
   public updateTrack(mid, comment): any {
-    console.log('Id : ' + mid + 'Comment : ' + comment);
     const track = "str";
     // const track = this.httpclient.put(this.mongodbUrl + 'track/' + mid, comment);
     return track;
