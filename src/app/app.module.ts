@@ -15,6 +15,7 @@ import { GetAllTracksComponent } from './get-all-tracks/get-all-tracks.component
 import { NavigationComponent } from './navigation/navigation.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     FormsModule,
     AppRoutingModule,
     NgxSpinnerModule,
+    MatProgressSpinnerModule,
     MDBBootstrapModule.forRoot()
   ],
   providers: [MuzixHttpService],

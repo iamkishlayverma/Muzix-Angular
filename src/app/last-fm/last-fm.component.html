@@ -1,9 +1,9 @@
 <div class="container" style="text-align:center">
   <div class="row" style="text-align:center">
     <div *ngIf="searching" class="col-md-12" style="font-size:22px">
-      <h3>
-        Searching...Almost there
-      </h3>
+      <ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="square-jelly-box" [fullScreen]="true">
+        <p style="color: white"> Loading... </p>
+      </ngx-spinner>
     </div>
     <div *ngIf="!searching" class="col-md-12" style="font-size:22px; display: inline;">
       Search Results for

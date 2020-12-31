@@ -1,3 +1,7 @@
 .container {
     margin-top: 10em;
 }
+.panel-default {
+    font-weight: 500;
+    font-size: 13px;
+}
