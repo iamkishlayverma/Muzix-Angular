@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class MuzixHttpService {
 
-  public lastfmUrl = 'http://ws.audioscrobbler.com/2.0';
+  public lastfmUrl = 'https://ws.audioscrobbler.com/2.0';
   public apiKey = '01887f43a08fb7bf4dc2e293b5e2c5b9';
 
   // public mongodbUrl = 'http://localhost:8090/api/v2/';
